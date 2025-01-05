@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrant Navigation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            font-size: 2.5em;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .quadrant {
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+            border-radius: 10px;
+        }
+
+        .quadrant:hover {
+            background-color: #e0e0e0; color: white;
+        }
+
+        #q1 { background-color: #ff9999; }
+        #q2 { background-color: #99ff99; }
+        #q3 { background-color: #9999ff; }
+        #q4 { background-color: #ffff99; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sarthak Sethi's Notes</h1>
+        <button class="quadrant" id="q1" onclick="navigate('page1.html')" style="color: white; text-shadow: 0 0 5px black;">Machine Learning</button>
+        <button class="quadrant" id="q2" onclick="navigate('page2.html')" style="color: white; text-shadow: 0 0 5px black;">Computer Science</button>
+        <button class="quadrant" id="q3" onclick="navigate('page3.html')" style="color: white; text-shadow: 0 0 5px black;">Data Science</button>
+        <button class="quadrant" id="q4" onclick="navigate('page4.html')" style="color: white; text-shadow: 0 0 5px black;">Artificial Intelligence</button>
+    </div>
+
+    <script>
+        function navigate(page) {
+            // Change the content without opening a new window
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

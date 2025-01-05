@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog - Green</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #ffeded;
+            background-color: #edffed;
             color: #333;
         }
 
         .nav {
-            background-color: #ff9999;
+            background-color: #99ff99;
             padding: 1rem;
             margin-bottom: 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -28,11 +28,11 @@
         }
 
         .nav a:hover {
-            color: #ffeded;
+            color: #edffed;
         }
 
         .nav a.active {
-            color: #ff4444;
+            color: #44ff44;
             font-weight: bold;
         }
 
@@ -49,19 +49,19 @@
             margin-bottom: 2rem;
             transition: transform 0.2s;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(255, 153, 153, 0.2);
-            border: 1px solid #ffcccc;
+            box-shadow: 0 2px 8px rgba(153, 255, 153, 0.2);
+            border: 1px solid #ccffcc;
         }
 
         .blog-post:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(255, 153, 153, 0.3);
+            box-shadow: 0 4px 12px rgba(153, 255, 153, 0.3);
         }
 
         .title {
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: #ff4444;
+            color: #44bb44;
         }
 
         .content {
@@ -76,11 +76,11 @@
         }
 
         .tag {
-            background-color: #ffcccc;
+            background-color: #ccffcc;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
-            color: #ff4444;
+            color: #44bb44;
         }
     </style>
 </head>
@@ -96,38 +96,38 @@
     </nav>
 
     <div class="container">
-        <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/blank.pdf'">
-            <h2 class="title">Machine Learning Fundamentals</h2>
+        <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
+            <h2 class="title">Data Structures Deep Dive</h2>
             <div class="content">
-                Starting my journey into machine learning today. Going to focus on understanding the basic concepts and mathematical foundations before diving into more complex topics.
+                Exploring advanced data structures and their implementations. Focus on performance optimization and practical applications.
             </div>
             <div class="tags">
-                <span class="tag">ML</span>
+                <span class="tag">DSA</span>
+                <span class="tag">Java</span>
+                <span class="tag">Algorithms</span>
+            </div>
+        </div>
+
+        <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
+            <h2 class="title">Binary Trees and Traversals</h2>
+            <div class="content">
+                Understanding different types of binary trees and various traversal methods. Implementation examples in multiple languages.
+            </div>
+            <div class="tags">
+                <span class="tag">Trees</span>
+                <span class="tag">Algorithms</span>
+            </div>
+        </div>
+
+        <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
+            <h2 class="title">Graph Algorithms</h2>
+            <div class="content">
+                Implementing and analyzing various graph algorithms. Focus on shortest path problems and network flow.
+            </div>
+            <div class="tags">
+                <span class="tag">Graphs</span>
+                <span class="tag">Algorithms</span>
                 <span class="tag">Python</span>
-                <span class="tag">Data Science</span>
-            </div>
-        </div>
-
-        <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
-            <h2 class="title">Neural Networks Overview</h2>
-            <div class="content">
-                Deep diving into neural networks and their applications. Exploring different architectures and use cases in modern AI applications.
-            </div>
-            <div class="tags">
-                <span class="tag">Neural Networks</span>
-                <span class="tag">Deep Learning</span>
-            </div>
-        </div>
-
-        <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
-            <h2 class="title">Getting Started with TensorFlow</h2>
-            <div class="content">
-                Setting up my development environment for machine learning projects. Installing and configuring TensorFlow for upcoming projects.
-            </div>
-            <div class="tags">
-                <span class="tag">TensorFlow</span>
-                <span class="tag">Setup</span>
-                <span class="tag">Tools</span>
             </div>
         </div>
     </div>

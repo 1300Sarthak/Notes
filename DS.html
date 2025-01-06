@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Green</title>
+    <title>Blog - Blue</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #edffed;
+            background-color: #ededed;
             color: #333;
         }
 
         .nav {
-            background-color: #99ff99;
+            background-color: #9999ff;
             padding: 1rem;
             margin-bottom: 2rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -28,11 +28,11 @@
         }
 
         .nav a:hover {
-            color: #edffed;
+            color: #ededff;
         }
 
         .nav a.active {
-            color: #44ff44;
+            color: #4444ff;
             font-weight: bold;
         }
 
@@ -49,19 +49,19 @@
             margin-bottom: 2rem;
             transition: transform 0.2s;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(153, 255, 153, 0.2);
-            border: 1px solid #ccffcc;
+            box-shadow: 0 2px 8px rgba(153, 153, 255, 0.2);
+            border: 1px solid #ccccff;
         }
 
         .blog-post:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(153, 255, 153, 0.3);
+            box-shadow: 0 4px 12px rgba(153, 153, 255, 0.3);
         }
 
         .title {
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: #44bb44;
+            color: #4444bb;
         }
 
         .content {
@@ -76,58 +76,56 @@
         }
 
         .tag {
-            background-color: #ccffcc;
+            background-color: #ccccff;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
-            color: #44bb44;
+            color: #4444bb;
         }
     </style>
 </head>
 <body>
     <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="#" class="active">Blog</a>
-        <a href="#">Resume</a>
-        <a href="#">Email</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">DevPost</a>
+        <a href="index.html">Home</a> 
+        <a href="ML.html">Machine Learning</a>
+        <a href="CS.html">Computer Science</a>
+        <a href="DS.html" class="active">Data Science</a>
+        <a href="AI.html">Artificial Intelligence</a>
     </nav>
 
     <div class="container">
         <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
-            <h2 class="title">Data Structures Deep Dive</h2>
+            <h2 class="title">Web Development Basics</h2>
             <div class="content">
-                Exploring advanced data structures and their implementations. Focus on performance optimization and practical applications.
+                Getting started with HTML, CSS, and JavaScript. Building responsive and interactive web applications.
             </div>
             <div class="tags">
-                <span class="tag">DSA</span>
-                <span class="tag">Java</span>
-                <span class="tag">Algorithms</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
             </div>
         </div>
 
         <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
-            <h2 class="title">Binary Trees and Traversals</h2>
+            <h2 class="title">React Framework Overview</h2>
             <div class="content">
-                Understanding different types of binary trees and various traversal methods. Implementation examples in multiple languages.
+                Understanding React components, state management, and modern web development practices.
             </div>
             <div class="tags">
-                <span class="tag">Trees</span>
-                <span class="tag">Algorithms</span>
+                <span class="tag">React</span>
+                <span class="tag">Frontend</span>
             </div>
         </div>
 
         <div class="blog-post" onclick="window.location.href='/Notes/Machine Learning/Blank'">
-            <h2 class="title">Graph Algorithms</h2>
+            <h2 class="title">Backend Development</h2>
             <div class="content">
-                Implementing and analyzing various graph algorithms. Focus on shortest path problems and network flow.
+                Exploring Node.js and Express for building robust backend services. Database integration and API design.
             </div>
             <div class="tags">
-                <span class="tag">Graphs</span>
-                <span class="tag">Algorithms</span>
-                <span class="tag">Python</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">Backend</span>
             </div>
         </div>
     </div>
